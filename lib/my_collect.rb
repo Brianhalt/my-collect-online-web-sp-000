@@ -1,7 +1,11 @@
 
 def my_collect(collection)
-  my_collect(collection) do |block|
-    block
+  i = 0
+  collection = []
+  while i < coillectoin.length
+    collection << yield(collection[i])
+    i += 1
+  end
+  collection
   end
 end
-  
